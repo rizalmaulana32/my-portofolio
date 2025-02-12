@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import profile from "./assets/profile.jpg";
 import bg from "./assets/bg.png";
+import cv from "./assets/cv.pdf";
 
 const Portfolio = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -145,26 +146,36 @@ const Portfolio = () => {
       </nav>
 
       <div className="p-8 flex justify-center space-x-4">
-        <Linkedin
-          size={20}
-          className="text-gray-400 hover:text-white cursor-pointer"
-        />
-        <Twitter
-          size={20}
-          className="text-gray-400 hover:text-white cursor-pointer"
-        />
-        <Instagram
-          size={20}
-          className="text-gray-400 hover:text-white cursor-pointer"
-        />
-        <Gitlab
-          size={20}
-          className="text-gray-400 hover:text-white cursor-pointer"
-        />
-        <Github
-          size={20}
-          className="text-gray-400 hover:text-white cursor-pointer"
-        />
+        <a href="https://www.linkedin.com/in/rizal-al-maulana/" target="_blank">
+          <Linkedin
+            size={20}
+            className="text-gray-400 hover:text-white cursor-pointer"
+          />
+        </a>
+        <a href="https://x.com/rizal_maulana01" target="_blank">
+          <Twitter
+            size={20}
+            className="text-gray-400 hover:text-white cursor-pointer"
+          />
+        </a>
+        <a href="https://instagram.com/rizalram.dev" target="_blank">
+          <Instagram
+            size={20}
+            className="text-gray-400 hover:text-white cursor-pointer"
+          />
+        </a>
+        <a href="https://gitlab.com/rizalmaulana32" target="_blank">
+          <Gitlab
+            size={20}
+            className="text-gray-400 hover:text-white cursor-pointer"
+          />
+        </a>
+        <a href="https://github.com/rizalmaulana32" target="_blank">
+          <Github
+            size={20}
+            className="text-gray-400 hover:text-white cursor-pointer"
+          />
+        </a>
       </div>
     </div>
   );
@@ -173,13 +184,26 @@ const Portfolio = () => {
     <div className="lg:hidden fixed top-0 left-0 right-0 z-50">
       <div className="bg-black bg-opacity-95 text-white p-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold">Your Name</h1>
+          <h1 className="text-xl font-bold">Rizal Maulana</h1>
           <div className="flex items-center space-x-4">
-            <Linkedin size={18} className="text-gray-400" />
-            <Twitter size={18} className="text-gray-400" />
-            <Instagram size={18} className="text-gray-400" />
-            <Gitlab size={18} className="text-gray-400" />
-            <Github size={18} className="text-gray-400" />
+            <a
+              href="https://www.linkedin.com/in/rizal-al-maulana/"
+              target="_blank"
+            >
+              <Linkedin size={20} className="text-gray-400" />
+            </a>
+            <a href="https://x.com/rizal_maulana01" target="_blank">
+              <Twitter size={20} className="text-gray-400" />
+            </a>
+            <a href="https://instagram.com/rizalram.dev" target="_blank">
+              <Instagram size={20} className="text-gray-400" />
+            </a>
+            <a href="https://gitlab.com/rizalmaulana32" target="_blank">
+              <Gitlab size={20} className="text-gray-400" />
+            </a>
+            <a href="https://github.com/rizalmaulana32" target="_blank">
+              <Github size={20} className="text-gray-400" />
+            </a>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2"
@@ -228,7 +252,7 @@ const Portfolio = () => {
             alt="Background"
             className="w-full h-full object-cover opacity-30"
           />
-        </div>{" "}
+        </div>
         {/* Main content area */}
         {/* Home Section */}
         <section
@@ -246,9 +270,14 @@ const Portfolio = () => {
               <p className="text-xl text-gray-300 mb-8">
                 based in Malang, Indonesia.
               </p>
-              <button className="px-8 py-3 bg-transparent border-2 border-emerald-400 text-emerald-400 rounded-full hover:bg-emerald-400 hover:text-white transition-colors duration-300">
-                Hire Me
-              </button>
+              <a
+                href="https://www.linkedin.com/in/rizal-al-maulana/"
+                target="_blank"
+              >
+                <button className="px-8 py-3 bg-transparent cursor-pointer border-2 border-emerald-400 text-emerald-400 rounded-full hover:bg-emerald-400 hover:text-white transition-colors duration-300">
+                  Hire Me
+                </button>
+              </a>
             </div>
           </div>
         </section>
@@ -305,10 +334,14 @@ const Portfolio = () => {
                     <p className="text-gray-300">Malang, Indonesia</p>
                   </div>
                 </div>
-                <button className="flex items-center gap-2 px-6 py-3 bg-emerald-400 text-white rounded-full hover:bg-emerald-500 transition-colors">
+                <a
+                  href={cv}
+                  download="CV RizalMaulana Fullstack Web Developer.pdf"
+                  className="flex items-center gap-2 px-6 py-3 bg-emerald-400 text-white rounded-full hover:bg-emerald-500 transition-colors w-max"
+                >
                   <Download size={20} />
                   Download CV
-                </button>
+                </a>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-6 bg-gray-800 rounded-lg">

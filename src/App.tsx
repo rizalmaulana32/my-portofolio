@@ -542,42 +542,6 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Name"
-                      className="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      className="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    className="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
-                  />
-                </div>
-                <div>
-                  <textarea
-                    placeholder="Message"
-                    rows={6}
-                    className="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400"
-                  ></textarea>
-                </div>
-                <button className="px-8 py-3 bg-emerald-400 text-white rounded-full hover:bg-emerald-500 transition-colors">
-                  Send Message
-                </button>
-              </form>
             </div>
           </div>
         </section>

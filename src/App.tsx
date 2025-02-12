@@ -184,25 +184,25 @@ const Portfolio = () => {
     <div className="lg:hidden fixed top-0 left-0 right-0 z-50">
       <div className="bg-black bg-opacity-95 text-white p-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold">Rizal Maulana</h1>
+          <div />
           <div className="flex items-center space-x-4">
             <a
               href="https://www.linkedin.com/in/rizal-al-maulana/"
               target="_blank"
             >
-              <Linkedin size={20} className="text-gray-400" />
+              <Linkedin size={18} className="text-gray-400" />
             </a>
             <a href="https://x.com/rizal_maulana01" target="_blank">
-              <Twitter size={20} className="text-gray-400" />
+              <Twitter size={18} className="text-gray-400" />
             </a>
             <a href="https://instagram.com/rizalram.dev" target="_blank">
-              <Instagram size={20} className="text-gray-400" />
+              <Instagram size={18} className="text-gray-400" />
             </a>
             <a href="https://gitlab.com/rizalmaulana32" target="_blank">
-              <Gitlab size={20} className="text-gray-400" />
+              <Gitlab size={18} className="text-gray-400" />
             </a>
             <a href="https://github.com/rizalmaulana32" target="_blank">
-              <Github size={20} className="text-gray-400" />
+              <Github size={18} className="text-gray-400" />
             </a>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -241,7 +241,7 @@ const Portfolio = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white overflow-hidden">
       <DesktopNav />
       <MobileNav />
 

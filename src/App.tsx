@@ -14,6 +14,12 @@ import {
 import profile from "./assets/profile.jpg";
 import bg from "./assets/bg.png";
 import cv from "./assets/cv.pdf";
+import jtpdc from "./assets/portos/jtpdc.png";
+import voffice from "./assets/portos/voffice.jpg";
+import wg from "./assets/portos/wg.jpg";
+import kominfo from "./assets/portos/kominfo.png";
+import taldio from "./assets/portos/taldio.png";
+import pega from "./assets/portos/pega.jpg";
 
 const Portfolio = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -63,19 +69,34 @@ const Portfolio = () => {
   // Sample portfolio items
   const portfolioItems = [
     {
-      title: "Web Design",
-      image: "/api/placeholder/400/300",
-      category: "Design",
+      title: "Jawa Timur Park Distribution Centre",
+      image: jtpdc,
+      category: "Web Developer",
     },
     {
-      title: "Mobile App",
-      image: "/api/placeholder/400/300",
-      category: "Development",
+      title: "VOffice - Service and Virtual Office",
+      image: voffice,
+      category: "Web Developer",
     },
     {
-      title: "Brand Identity",
-      image: "/api/placeholder/400/300",
-      category: "Branding",
+      title: "SISI - Wika Gedung Eprocurement",
+      image: wg,
+      category: "Web Developer",
+    },
+    {
+      title: "SISI - Kominfo -Sistem Pelatihan Kerja Nasional",
+      image: kominfo,
+      category: "Web Developer",
+    },
+    {
+      title: "Taldio Job Seeker",
+      image: taldio,
+      category: "Web Developer",
+    },
+    {
+      title: "Sahabat Pegadaian Content Management System",
+      image: pega,
+      category: "Web Developer",
     },
   ];
 
@@ -513,7 +534,7 @@ const Portfolio = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-64 object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="text-center">
